@@ -37,9 +37,10 @@ It is designed to handle UTM tracking links for marketing campaigns and prevents
    ```
 
 3. **Set Up Environment Variables**:
-   Create a `.env` file in the root directory and add your MongoDB connection string:
+   Create a `.env` file in the root directory and add your MongoDB connection string and port:
    ```
-   MONGO_URI=mongodb://localhost:27017/url-hash
+   MONGODB_URI= <your-mongodb-URI>
+   PORT=8000
    ```
 
 4. **Start the Application**:
@@ -48,7 +49,7 @@ It is designed to handle UTM tracking links for marketing campaigns and prevents
    ```
 
 5. **Access the API**:
-   The API will be running on `http://localhost:3000`.
+   The API will be running on `http://localhost:8000`.
 
 ## API Endpoints
 
@@ -65,7 +66,7 @@ It is designed to handle UTM tracking links for marketing campaigns and prevents
 - **Response**:
    ```json
    {
-     "shortUrl": "http://localhost:3000/abc123"
+     "shortUrl": "http://localhost:8000/abc123"
    }
    ```
 
